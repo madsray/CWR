@@ -10,3 +10,39 @@ img.logo{
 li{
   list-style-type: none;
 }
+h1{
+  text-align: center;
+  color: #8C9DA5!important;
+}
+.us{
+    display: flex;
+    padding: 0;
+
+}
+.listus{
+  margin: auto;
+}
+p{
+  text-align: justify;
+  height: 30%;
+  width: 80%;
+  margin: auto!important;
+
+}
+.container{
+
+  display:flex;
+  background-color:#E6E6E6;
+  padding: 0px!important;
+  margin: 0px!important;
+  width: auto!important;
+}
+img#bathroom{
+  padding: 0px;
+}
+.placeholder{
+  height: 150px;
+  width: auto;
+  padding: 0px;
+  background-color: lightblue;
+}
