@@ -49,11 +49,16 @@ img#bathroom{
 .rowA{
   display: flex;
   flex-wrap: wrap;
-  margin: 10%;
+  margin:auto;
+  justify-content: center;
+  align-content: space-around;
+}
+img.icons:hover{
+  transform: scale(1.2);
 }
 img.icons{
-  /* height: 10%; */
-  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 a{
   margin: 10px;
