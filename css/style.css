@@ -46,3 +46,17 @@ img#bathroom{
   padding: 0px;
   background-color: lightblue;
 }
+.rowA{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10%;
+}
+img.icons{
+  /* height: 10%; */
+  width: auto;
+}
+a{
+  margin: 10px;
+  height: auto;
+  line-height: none!important;
+}
