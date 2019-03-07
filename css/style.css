@@ -19,15 +19,29 @@ h1{
     padding: 0;
 
 }
-.listus{
-  margin: auto;
+.subCont{
+  max-height: 300px;
 }
+.listus{
+  margin:70px auto;
+}
+@media (max-width: 1032px) {
+li.listus {
+display: none;
+}
+}
+
 p#intro{
   text-align: justify;
   height: 30%;
   width: 80%;
   margin: auto!important;
 
+}
+@media (max-width: 850px) {
+p#intro {
+display: none;
+}
 }
 .container{
 
@@ -77,15 +91,6 @@ a{
   padding-top: 100px;
 
 }
-/* .people{
-  border-radius: 100px;
-  background-color: black;
-}
-.people img:hover{
-  opacity: 0.5!important;
-} */
-
-
 
 /*  PEOPLE */
 
@@ -114,33 +119,42 @@ a{
 }
 
 .containerP:hover .overlay{
-  opacity: .7;
+  opacity: .9;
   color: black;
 }
 
 .containerP:hover{
-  color:maroon;
+  color:navy;
 }
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+p{
+  padding: 20px 30px;
+  margin: 0px;
+  line-height: 18px;
 }
 em{
-  color: maroon;
+  color: #616162;
   font-weight: bold;
   font-size: 20px;
+  z-index: 5;
 }
 .glyphicon{
-  font-size: 30px;
-  color:maroon;
+  font-size: 35px;
+  color:#616162;
+}
+a{
+  margin: 0px;
 }
 a.glyphicon{
   margin-left:40%!important;
+
+}
+
+.nameplate{
+  text-align: center;
+}
+h5{
+  font-size: 20px!important;
+}
+h6{
+  font-size: 13.5px!important;
 }
