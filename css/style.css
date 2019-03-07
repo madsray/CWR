@@ -6,7 +6,12 @@ img.logo{
 .logo{
   transition: opacity 2s ease-in;
 }
-
+h3{
+  text-align: center;
+  font-size: 50px!important;
+  padding: 50px;
+  color: #868181!important;
+}
 li{
   list-style-type: none;
 }
@@ -63,18 +68,18 @@ img#bathroom{
 .rowA{
   display: flex;
   flex-wrap: wrap;
-  margin:auto;
+  margin:0px auto;
   justify-content: center;
   align-content: space-around;
   padding-bottom: 100px;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 img.icons:hover{
   transform: scale(1.5);
 }
 img.icons{
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 a{
   margin: 10px;
@@ -86,10 +91,10 @@ a{
   display: flex;
   flex-wrap: wrap;
   margin:auto;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 100px;
-  padding-top: 100px;
-
+  padding-top: 30px;
+  /* background-color: #C0C9CD; */
 }
 
 /*  PEOPLE */
@@ -103,6 +108,8 @@ a{
   display: block;
   /* width: 35%; */
   height: auto;
+  margin: 20px;
+  border-radius: 100px;
 }
 
 .overlay {
@@ -116,6 +123,7 @@ a{
   opacity: 0;
   transition: .5s ease;
   background-color: white;
+  border-radius: 100px;
 }
 
 .containerP:hover .overlay{
@@ -127,9 +135,10 @@ a{
   color:navy;
 }
 p{
-  padding: 20px 30px;
+  padding: 80px 40px 10px 40px;
   margin: 0px;
   line-height: 18px;
+  color: navy;
 }
 em{
   color: #616162;
