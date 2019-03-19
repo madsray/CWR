@@ -10,6 +10,72 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+  <style media="screen">
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  /* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  } */
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -28,7 +94,7 @@
               <li><a href="sales.html">Sales Force</a></li>
             </ul>
           </li>
-          <li><a href="manufacturer">Manufacturers</a></li>
+          <li><a href="#manufacturer">Manufacturers</a></li>
           <li><a href="#staff">Our Staff</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
@@ -54,9 +120,9 @@
         <img id="bathroom" src="images/Brentwood_Lifestyle_Tub.jpg"  height="300px"alt="">
       </div>
       <!-- insert slider here -->
-        <div class="placeholder"></div>
-      <h3>Our Manufacturers</h3>
-      
+      <div class="placeholder"></div>
+      <h3 id="manufacturer">Our Manufacturers</h3>
+
       <div class="rowA">
         <a href="https://www.bemismfg.com/" target="_blank"><img class="icons"src="manu/bemis.png" alt=""></a>
         <a href="https://www.dahlvalve.com/index.php" target="_blank"><img class="icons"src="manu/dahl.png" alt=""></a>
@@ -76,7 +142,36 @@
         <!-- <a href="#" target="_blank"><img class="icons"src="manu/walraven.png" alt=""></a> -->
       </div>
       <div class="container">
-        <img id="bathroom" src="images/Brentwood_Lifestyle_Tub.jpg"  height="300px"alt="">
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/milw.jpg" style="height:300px">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/meeting.jpeg" style="height:300px">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/group1.jpg" style="height:300px">
+            <div class="text">Caption Three</div>
+          </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
         <div class="subCont">
           <h1 id="staff">Meet Our Team</h1>
           <p>Our team makes us who we are. Pretty amazing. We are tied together with a wealth of experience and fresh perspectives. Our team is passionate, confident and positive in their ability to create and achieve success. By seeking out motivated, problem-solving professionals, we have helped our brands grow for over 70 years.</p>
@@ -300,5 +395,29 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+
+
   </body>
+
   </html>
