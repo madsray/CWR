@@ -135,7 +135,7 @@ a{
   color:navy;
 }
 p{
-  padding: 80px 40px 10px 40px;
+  padding: 40px;
   margin: 0px;
   line-height: 18px;
   color: navy;
@@ -166,4 +166,34 @@ h5{
 }
 h6{
   font-size: 13.5px!important;
+}
+.staffHead{
+  margin: 0 100px;
+  text-align: center;
+}
+.state{
+  background-image: url('../images/Tx.png');
+  height: 760px;
+  width: 800px;
+  margin: 20px;
+}
+.flex{
+  display: flex;
+}
+h4{
+  position: absolute;
+  font-size: 100px!important;
+  text-align: center;
+  margin-left: 50%;
+  z-index: -5;
+}
+#houston{
+  position: relative;
+  left: 630px;
+  top: 470px;
+}
+#arlington{
+  position: relative;
+  left: 570px;
+  top: 270px;
 }
