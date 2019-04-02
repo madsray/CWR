@@ -96,7 +96,7 @@
           </li>
           <li><a href="#manufacturer">Manufacturers</a></li>
           <li><a href="#staff">Our Staff</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contactHead">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -400,11 +400,15 @@
     <div class="state">
       <button onclick="popArlington()"
     id="arlington" class="glyphicon glyphicon-star"> <br>Warehouse</button>
-      <button id="houston" class="glyphicon glyphicon-star"><br>Corporate</button>
+      <button onclick="popHouston()" id="houston" class="glyphicon glyphicon-star"><br>Corporate</button>
 
     </div>
-    <div id="contactA">
+    <div class="noFlex">
+
+
+    <div id="contactA" style="display:none;">
       <div class="flex">
+
       <span class="	glyphicon glyphicon-home"> </span>
       <p2>915 W. Mayfield Rd. Ste. 101,<br> Arlington, TX 76015<p2>
       </div>
@@ -419,7 +423,27 @@
         <p2>Email Us!</p2>
       </div>
     </div>
+
+    <div id="contactB"  style="display:none;">
+      <div class="flex">
+      <span class="	glyphicon glyphicon-home"> </span>
+      <p2>21240 Foster Rd Bldg 1,<br> Spring, TX 77388<p2>
+      </div>
+      <br>
+      <div class="flex">
+        <span class="	glyphicon glyphicon-phone"> </span>
+        <p2>(281)-651-9500<p2>
+      </div>
+      <br>
+      <div class="flex">
+        <a href="mailto:sales@mratx.com"class="	glyphicon glyphicon-pencil"> </a>
+        <p2>Email Us!</p2>
+      </div>
     </div>
+    </div>
+  </div>
+
+
     <script type="text/javascript">
     var slideIndex = 0;
     showSlides();

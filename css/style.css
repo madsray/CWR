@@ -3,6 +3,9 @@ img.logo{
   margin: 100px auto;
 
 }
+body{
+  font-family: "minion-3", serif!important;
+}
 .logo{
   transition: opacity 2s ease-in;
 }
@@ -137,9 +140,10 @@ a{
 }
 p{
   padding: 40px;
-  margin: 0px;
+  margin-top:30px!important;
   line-height: 18px;
-  color: navy;
+  color:#868181 ;
+  font-size: 15px;
 }
 em{
   color: #616162;
@@ -211,27 +215,9 @@ button {
   font-size: 10px;
 }
 
-.glyphicon-star{
--webkit-transition-duration: 0.8s;
--moz-transition-duration: 0.8s;
--o-transition-duration: 0.8s;
-transition-duration: 0.8s;
 
--webkit-transition-property: -webkit-transform;
--moz-transition-property: -moz-transform;
--o-transition-property: -o-transform;
-transition-property: transform;
 
-overflow:hidden;
 
-}
-
-.glyphicon-star:hover
-{
--webkit-transform:rotate(360deg);
--moz-transform:rotate(360deg);
--o-transform:rotate(360deg);
-}
 p2{
   padding-left: 20px;
   font-size: 20px;
@@ -246,4 +232,11 @@ a.glyphicon{
   text-align: center;
   font-size: 50px;
   padding-bottom: 10%;
+}
+
+#contactB{
+  position:relative;
+  top: 370px;
+  left: 100px;
+
 }
